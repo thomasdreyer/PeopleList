@@ -1,7 +1,7 @@
 <?php
 
 try{
-$db = new PDO('pgsql:host=localhost;dbname=capture','Thomas','12#tabiso');
+$db = new PDO('mysql:host=localhost;dbname=capture','*****','******');
 //var_dump($db);
 
 }
