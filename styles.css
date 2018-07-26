@@ -1,0 +1,29 @@
+.container{
+	
+margin:30px auto;
+
+
+
+}
+
+
+input[type=text]{
+
+border:1px solid blue;
+
+}
+
+#submit-form{
+	margin:30px auto auto 100px;
+	padding:7px;
+	border-radius: 10px;
+}
+
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid black;
+}

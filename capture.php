@@ -1,11 +1,24 @@
 <?php
 
 $name = $_POST['name'];
+$nameval = preg_match_all('/[^a-zA-Z]/', $name);
 $surname = $_POST['surname'];
+$surnameval = preg_match_all('/[^a-zA-Z]/', $surname);
 $bday = $_POST['bday'];
 $cellphone = $_POST['cellphone'];
+$cellphoneval = preg_match_all('/[^0-9]/', $cellphone);
 $email = $_POST['email'];
 $date = date("Y/m/d");
+   
+   if( $nameval > 0 || $surnameval > 0 || $cellphoneval > 0)
+   {
+      
+        //echo $name;
+     	echo 'error';
+
+      } else {
+     
+        
 
 include 'connec.php';
 try{
@@ -27,6 +40,10 @@ catch(Exception $e){
 }
 
 
+
+
+  
+   }
 
 
 
